@@ -1,0 +1,36 @@
+{
+  "name": "vn-game-server",
+  "version": "1.0.0",
+  "description": "Backend API สำหรับ Visual Novel เกม - เสิร์ฟ dialogue (JSON) และ asset (รูป/เพลง/เสียง)",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "health": "node -e \"fetch('http://localhost:'+(process.env.PORT||3000)+'/health').then(r=>r.json()).then(j=>console.log(j)).catch(e=>{console.error(e);process.exit(1)})\"",
+    "migrate:merge-accounts": "node scripts/mergeAccounts.js",
+    "migrate:merge-accounts:execute": "node scripts/mergeAccounts.js --execute"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "bootstrap-icons": "^1.13.1",
+    "compression": "^1.8.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.2",
+    "express-session": "^1.19.0",
+    "jwt-decode": "^4.0.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^3.23.3",
+    "qs": "^6.16.0"
+  },
+  "overrides": {
+    "qs": "^6.16.0"
+  },
+  "devDependencies": {
+    "pngjs": "^7.0.0"
+  }
+}
