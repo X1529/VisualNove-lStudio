@@ -1,0 +1,405 @@
+{
+  "story_id": 13,
+  "title": "ภายในรถเมล์ Mephistopheles",
+  "next_id": 1,
+  "assets_preload": [
+    {
+      "asset_id": 8,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Dante_idle",
+      "file_name": "Dante_StandingSprite.png",
+      "file_path": "/assets/characters/Dante/1788608319429-710008812-Dante_StandingSprite.png",
+      "mime_type": "image/png",
+      "size_bytes": 704713,
+      "created_at": "2026-09-05T11:38:39.000Z",
+      "updated_at": "2026-09-05T11:45:06.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Dante/1788608319429-710008812-Dante_StandingSprite.png"
+    },
+    {
+      "asset_id": 9,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "รถบัส",
+      "file_name": "Story_Aboard_Mephistopheles_10_BG.png",
+      "file_path": "/assets/backgrounds/1788608348444-116541716-Story_Aboard_Mephistopheles_10_BG.png",
+      "mime_type": "image/png",
+      "size_bytes": 1052868,
+      "created_at": "2026-09-05T11:39:08.000Z",
+      "updated_at": "2026-09-05T11:39:08.000Z",
+      "file_url": "http://localhost:3000/assets/backgrounds/1788608348444-116541716-Story_Aboard_Mephistopheles_10_BG.png"
+    },
+    {
+      "asset_id": 10,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Don_Quixote_WoW",
+      "file_name": "Don_Quixote_Sprite_2.png",
+      "file_path": "/assets/characters/Don/1788608370061-712584114-Don_Quixote_Sprite_2.png",
+      "mime_type": "image/png",
+      "size_bytes": 607710,
+      "created_at": "2026-09-05T11:39:30.000Z",
+      "updated_at": "2026-09-05T11:39:58.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Don/1788608370061-712584114-Don_Quixote_Sprite_2.png"
+    },
+    {
+      "asset_id": 11,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Don_Quixote_ร่าเริง",
+      "file_name": "Don_Quixote_Sprite_1.png",
+      "file_path": "/assets/characters/Don/1788608438899-295789325-Don_Quixote_Sprite_1.png",
+      "mime_type": "image/png",
+      "size_bytes": 607933,
+      "created_at": "2026-09-05T11:40:38.000Z",
+      "updated_at": "2026-09-05T11:41:47.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Don/1788608438899-295789325-Don_Quixote_Sprite_1.png"
+    },
+    {
+      "asset_id": 12,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Don Quixote_มองซ้าย",
+      "file_name": "Don_Quixote_Sprite_4.png",
+      "file_path": "/assets/characters/Don/1788608601935-281088701-Don_Quixote_Sprite_4.png",
+      "mime_type": "image/png",
+      "size_bytes": 607235,
+      "created_at": "2026-09-05T11:43:21.000Z",
+      "updated_at": "2026-09-05T15:41:03.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Don/1788608601935-281088701-Don_Quixote_Sprite_4.png"
+    },
+    {
+      "asset_id": 13,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Don_Quixote_idle",
+      "file_name": "Don_Quixote_StandingSprite.png",
+      "file_path": "/assets/characters/Don/1788608682514-336070250-Don_Quixote_StandingSprite.png",
+      "mime_type": "image/png",
+      "size_bytes": 525908,
+      "created_at": "2026-09-05T11:44:42.000Z",
+      "updated_at": "2026-09-05T11:44:42.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Don/1788608682514-336070250-Don_Quixote_StandingSprite.png"
+    },
+    {
+      "asset_id": 14,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "bgm",
+      "asset_name": "Limbus Company - Mephistopheles Story Theme",
+      "file_name": "Limbus Company - Mephistopheles Story Theme.mp3",
+      "file_path": "/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 1510432,
+      "created_at": "2026-09-05T13:38:10.000Z",
+      "updated_at": "2026-09-05T13:38:10.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3"
+    },
+    {
+      "asset_id": 19,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "dante-clock-surprise-sound-made-with-Voicemod",
+      "file_name": "dante-clock-surprise-sound-made-with-Voicemod.mp3",
+      "file_path": "/assets/sfx/1788616418344-949460616-dante-clock-surprise-sound-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 23040,
+      "created_at": "2026-09-05T13:53:38.000Z",
+      "updated_at": "2026-09-05T13:53:38.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788616418344-949460616-dante-clock-surprise-sound-made-with-Voicemod.mp3"
+    },
+    {
+      "asset_id": 20,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "dante-hurt-sound-clock-made-with-Voicemod",
+      "file_name": "dante-hurt-sound-clock-made-with-Voicemod.mp3",
+      "file_path": "/assets/bgm/1788616500558-238305005-dante-hurt-sound-clock-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 35328,
+      "created_at": "2026-09-05T13:55:00.000Z",
+      "updated_at": "2026-09-05T13:55:08.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788616500558-238305005-dante-hurt-sound-clock-made-with-Voicemod.mp3"
+    },
+    {
+      "asset_id": 21,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "clashSWORD",
+      "file_name": "limbus_company_clash.mp3",
+      "file_path": "/assets/sfx/1788616537507-139041265-limbus_company_clash.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 59073,
+      "created_at": "2026-09-05T13:55:37.000Z",
+      "updated_at": "2026-09-05T13:55:37.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788616537507-139041265-limbus_company_clash.mp3"
+    },
+    {
+      "asset_id": 22,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "dante-wick-clock-made-with-Voicemod",
+      "file_name": "dante-wick-clock-made-with-Voicemod.mp3",
+      "file_path": "/assets/sfx/1788616559164-443769983-dante-wick-clock-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 61056,
+      "created_at": "2026-09-05T13:55:59.000Z",
+      "updated_at": "2026-09-05T13:55:59.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788616559164-443769983-dante-wick-clock-made-with-Voicemod.mp3"
+    },
+    {
+      "asset_id": 24,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "dante-register-made-with-Voicemod",
+      "file_name": "dante-register-made-with-Voicemod.mp3",
+      "file_path": "/assets/sfx/1788616722191-24370411-dante-register-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 23853,
+      "created_at": "2026-09-05T13:58:42.000Z",
+      "updated_at": "2026-09-05T13:58:42.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788616722191-24370411-dante-register-made-with-Voicemod.mp3"
+    },
+    {
+      "asset_id": 26,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "manager-esquiree!!!!!!-made-with-Voicemod",
+      "file_name": "manager-esquiree!!!!!!-made-with-Voicemod.mp3",
+      "file_path": "/assets/sfx/1788621386653-332486473-manager-esquiree______-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 93741,
+      "created_at": "2026-09-05T15:16:26.000Z",
+      "updated_at": "2026-09-05T15:16:26.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788621386653-332486473-manager-esquiree______-made-with-Voicemod.mp3"
+    }
+  ],
+  "dialogues": [
+    {
+      "dialogue_id": 1,
+      "sort_order": 0,
+      "title": "",
+      "pos_x": 138,
+      "pos_y": 42,
+      "lines": [
+        {
+          "speaker": "left",
+          "name": "ดันเต้",
+          "identity": "ผู้จัดการ",
+          "text": "(ดอน กิโฆเต้ ช่วยอยู่นิ่งๆ สักพักได้ไหม?)",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 24,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": true
+            },
+            {
+              "asset_id": 11,
+              "position": "right",
+              "highlight": false
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "right",
+          "name": "ดอน กิโฆเต้",
+          "identity": "คนบาป หมายเลข 3",
+          "text": "ฮ่าฮ่า! ท่านผู้จัดการ! ข้ากำลังฝึกฝนวิชาดาบแห่งความยุติธรรมอยู่นะขอรับ!",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 26,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": false
+            },
+            {
+              "asset_id": 11,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "left",
+          "name": "ดันเต้",
+          "identity": "ผู้จัดการ",
+          "text": "(แต่ควงดาบในรถบัสแบบนี้มันอันตรายนะ!)",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 19,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": true
+            },
+            {
+              "asset_id": 12,
+              "position": "right",
+              "highlight": false
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "right",
+          "name": "ดอน กิโฆเต้",
+          "identity": "คนบาป หมายเลข 3",
+          "text": "ไม่ต้องห่วงขอรับ! ฝีมือของข้าเฉียบคมระระดับตำนาน— ย๊ากกก!",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 21,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": false
+            },
+            {
+              "asset_id": 10,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": true,
+          "flashDuration": 400,
+          "shake": true,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 400,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "left",
+          "name": "ดันเต้",
+          "identity": "ผู้จัดการ",
+          "text": "(โอ๊ย! โดนหัวฉันเต็มๆ เลยเห็นไหม!)",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 20,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": true
+            },
+            {
+              "asset_id": 10,
+              "position": "right",
+              "highlight": false
+            }
+          ],
+          "flash": true,
+          "flashDuration": 0.2,
+          "shake": true,
+          "shakeType": "shake-heavy",
+          "shakeDuration": 0.5,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "right",
+          "name": "ดอน กิโฆเต้",
+          "identity": "คนบาป หมายเลข 3",
+          "text": "หวาาา! ท่านผู้จัดการ! ข้าขออภัยอย่างยิ่งยวดขอรับ!",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": false
+            },
+            {
+              "asset_id": 10,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "left",
+          "name": "ดันเต้",
+          "identity": "ผู้จัดการ",
+          "text": "... คราวหลังให้ไปซ้อมข้างนอกรถนะ...",
+          "bg": 9,
+          "bgm": 14,
+          "sfx": 22,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "left",
+              "highlight": true
+            },
+            {
+              "asset_id": 13,
+              "position": "right",
+              "highlight": false
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": 2,
+      "choices": []
+    }
+  ]
+}

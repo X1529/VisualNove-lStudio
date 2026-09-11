@@ -1,0 +1,570 @@
+{
+  "story_id": 14,
+  "title": "test",
+  "next_id": 1,
+  "assets_preload": [
+    {
+      "asset_id": 14,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "bgm",
+      "asset_name": "Limbus Company - Mephistopheles Story Theme",
+      "file_name": "Limbus Company - Mephistopheles Story Theme.mp3",
+      "file_path": "/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 1510432,
+      "created_at": "2026-09-05T13:38:10.000Z",
+      "updated_at": "2026-09-05T13:38:10.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3"
+    },
+    {
+      "asset_id": 42,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Amiya",
+      "file_name": "Limbus-Amiya.webp",
+      "file_path": "/assets/characters/Amiya/1788627823303-679329086-Limbus-Amiya.webp",
+      "mime_type": "image/webp",
+      "size_bytes": 157562,
+      "created_at": "2026-09-05T17:03:43.000Z",
+      "updated_at": "2026-09-05T17:03:43.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Amiya/1788627823303-679329086-Limbus-Amiya.webp"
+    },
+    {
+      "asset_id": 47,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "bgm",
+      "asset_name": "[ LibraryOfRuina Bgm ] Theme 01",
+      "file_name": "[ LibraryOfRuina Bgm ] Theme 01.mp3",
+      "file_path": "/assets/bgm/1788759479386-407443616-__LibraryOfRuina_Bgm___Theme_01.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 770017,
+      "created_at": "2026-09-07T05:37:59.000Z",
+      "updated_at": "2026-09-07T05:37:59.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788759479386-407443616-__LibraryOfRuina_Bgm___Theme_01.mp3"
+    },
+    {
+      "asset_id": 48,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "PageFlip",
+      "file_name": "PageFlip.mp3",
+      "file_path": "/assets/sfx/1788760597092-428370789-PageFlip.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 13303,
+      "created_at": "2026-09-07T05:56:37.000Z",
+      "updated_at": "2026-09-07T05:56:37.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788760597092-428370789-PageFlip.mp3"
+    },
+    {
+      "asset_id": 49,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "main",
+      "file_name": "10570640.jpg",
+      "file_path": "/assets/backgrounds/1788761444915-686187516-10570640.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 290516,
+      "created_at": "2026-09-07T06:10:44.000Z",
+      "updated_at": "2026-09-07T06:10:44.000Z",
+      "file_url": "http://localhost:3000/assets/backgrounds/1788761444915-686187516-10570640.jpg"
+    },
+    {
+      "asset_id": 50,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "Screenshot 2026-09-07 131500",
+      "file_name": "Screenshot 2026-09-07 131500.png",
+      "file_path": "/assets/backgrounds/1788761775464-378123656-Screenshot_2026-09-07_131500.png",
+      "mime_type": "image/png",
+      "size_bytes": 1084544,
+      "created_at": "2026-09-07T06:16:15.000Z",
+      "updated_at": "2026-09-07T06:16:15.000Z",
+      "file_url": "http://localhost:3000/assets/backgrounds/1788761775464-378123656-Screenshot_2026-09-07_131500.png"
+    },
+    {
+      "asset_id": 51,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "ex",
+      "file_name": "how-to-draw-a-pistol-holding-hand-epic-multi-angle-tutorial-v0-7pljydafzpxe1.webp",
+      "file_path": "/assets/characters/ex/1788765167249-156065814-how-to-draw-a-pistol-holding-hand-epic-multi-angle-tutorial-v0-7pljydafzpxe1.webp",
+      "mime_type": "image/webp",
+      "size_bytes": 71586,
+      "created_at": "2026-09-07T07:12:47.000Z",
+      "updated_at": "2026-09-07T07:15:30.000Z",
+      "file_url": "http://localhost:3000/assets/characters/ex/1788765167249-156065814-how-to-draw-a-pistol-holding-hand-epic-multi-angle-tutorial-v0-7pljydafzpxe1.webp"
+    },
+    {
+      "asset_id": 52,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Amiya_Sprite_2",
+      "file_name": "Amiya_Sprite_2.png",
+      "file_path": "/assets/characters/Amiya/1788765944569-272955860-Amiya_Sprite_2.png",
+      "mime_type": "image/png",
+      "size_bytes": 502614,
+      "created_at": "2026-09-07T07:25:44.000Z",
+      "updated_at": "2026-09-07T07:25:44.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Amiya/1788765944569-272955860-Amiya_Sprite_2.png"
+    },
+    {
+      "asset_id": 53,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Amiya_Sprite_ยิ้ม",
+      "file_name": "Amiya_Sprite_8.png",
+      "file_path": "/assets/characters/Amiya/1788765958407-885380244-Amiya_Sprite_8.png",
+      "mime_type": "image/png",
+      "size_bytes": 502015,
+      "created_at": "2026-09-07T07:25:58.000Z",
+      "updated_at": "2026-09-07T07:25:58.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Amiya/1788765958407-885380244-Amiya_Sprite_8.png"
+    },
+    {
+      "asset_id": 54,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Amiya_Sprite_less",
+      "file_name": "Amiya_Sprite_7.png",
+      "file_path": "/assets/characters/Amiya/1788766009176-310629331-Amiya_Sprite_7.png",
+      "mime_type": "image/png",
+      "size_bytes": 502021,
+      "created_at": "2026-09-07T07:26:49.000Z",
+      "updated_at": "2026-09-07T07:26:49.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Amiya/1788766009176-310629331-Amiya_Sprite_7.png"
+    },
+    {
+      "asset_id": 55,
+      "story_id": 14,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "Screenshot 2026-09-07 150612",
+      "file_name": "Screenshot 2026-09-07 150612.png",
+      "file_path": "/assets/characters/Screenshot_2026-09-07_150612/1788768454214-427774310-Screenshot_2026-09-07_150612.png",
+      "mime_type": "image/png",
+      "size_bytes": 301023,
+      "created_at": "2026-09-07T08:07:34.000Z",
+      "updated_at": "2026-09-07T08:07:42.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Screenshot_2026-09-07_150612/1788768454214-427774310-Screenshot_2026-09-07_150612.png"
+    }
+  ],
+  "dialogues": [
+    {
+      "dialogue_id": 1,
+      "sort_order": 0,
+      "title": "",
+      "pos_x": 90.85408323777597,
+      "pos_y": 31.546526577446464,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "???",
+          "identity": "",
+          "text": "สวัสดีคะ...ฉันชื่อว่าAmiya มาเป็นผู้แทนการนำเสนอโปรเจกต์",
+          "bg": 49,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 53,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "โปรเจกต์มีชื่อว่า Visual Novel Studio",
+          "bg": 49,
+          "bgm": null,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 52,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": null,
+      "choices": [
+        {
+          "text": "ทำไมถึงสร้าง Visual Novel Studio ขึ้นมา",
+          "next": 2
+        },
+        {
+          "text": "Visual Novel คืออะไร",
+          "next": null
+        }
+      ]
+    },
+    {
+      "dialogue_id": 2,
+      "sort_order": 1,
+      "title": "",
+      "pos_x": 511.0648434506436,
+      "pos_y": 43.819329279800385,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "ปัญหาคือ “เราอยากแต่งเรื่องสักเรื่อง…”",
+          "bg": 49,
+          "bgm": 47,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 42,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "“แต่เราไม่ค่อยชอบนิยายที่มีแต่อักษร\nเราชอบการเล่าเรื่องแบบ Webtoon มากกว่า\nเพราะมีทั้งภาพ ตัวละคร และบทสนทนา ทำให้เห็นเรื่องราวได้ง่ายกว่า”\n",
+          "bg": 50,
+          "bgm": null,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 54,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "ไม่ได้ถนัดด้านการวาดภาพ\nการสร้างตัวละครและฉากเองจึงเป็นเรื่องที่ค่อนข้างยาก ต้องวาดตัวละครหลายท่าทาง หลายมุม และหลายอารมณ์\nซึ่งใช้เวลาและฝีมือค่อนข้างมา ",
+          "bg": 51,
+          "bgm": null,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 52,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "อย่างน้อยก็วาดตัวละครแบบหน้าตรงได้ อย่างตัวฉันเองเป็นตัวละครแบบหน้าตรง",
+          "bg": 49,
+          "bgm": null,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 42,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": null,
+      "choices": [
+        {
+          "text": "จึงเลือก Visual Novel…ใช่ไหม",
+          "next": 3
+        }
+      ]
+    },
+    {
+      "dialogue_id": 3,
+      "sort_order": 2,
+      "title": "",
+      "pos_x": 832.6496720603625,
+      "pos_y": 35.33931443887576,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "ใช่แล้ว เพราะ Visual Novel สามารถวาดตัวละครขึ้นมาเพียงครั้งเดียว แล้วนำตัวละครเดิมมาเปลี่ยนสีหน้า หรือ Expression ได้ ทำให้เราไม่จำเป็นต้องวาดตัวละครใหม่ทุกครั้งที่เปลี่ยนฉากหรือบทสนทนา",
+          "bg": 49,
+          "bgm": 47,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 52,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": null,
+      "choices": [
+        {
+          "text": "แล้วถ้าเราอยากสร้าง Visual Novel ขึ้นมาจริง ๆ ล่ะ?",
+          "next": 5
+        }
+      ]
+    },
+    {
+      "dialogue_id": 4,
+      "sort_order": 3,
+      "title": "",
+      "pos_x": 1505.4208077450123,
+      "pos_y": 115.77216114671614,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "“Game Engine มีความสามารถมากและเหมาะกับการพัฒนาเกมเต็มรูปแบบ แต่สำหรับผู้ที่ต้องการเน้นการเขียนเรื่อง บทสนทนา และเส้นทางของเรื่อง อาจมีระบบที่ไม่จำเป็นต้องใช้งาน”",
+          "bg": 49,
+          "bgm": 14,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 54,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": [
+            "dialogueLine",
+            "speakerName",
+            "dialogueText"
+          ]
+        },
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "เราเลยเลือกสร้าง Visual Novel Studio ที่ตัดความซับซ้อนเหล่านั้นออก และเน้นเฉพาะกระบวนการสร้าง Visual Novel",
+          "bg": 49,
+          "bgm": null,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 53,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": [
+            "dialogueLine",
+            "speakerName",
+            "dialogueText"
+          ]
+        }
+      ],
+      "nextChapter": null,
+      "choices": [
+        {
+          "text": "แล้วสิ่งที่เราพูดมาทั้งหมดนี้ เอาไปใช้งานจริงอย่างไร?",
+          "next": 6
+        }
+      ]
+    },
+    {
+      "dialogue_id": 5,
+      "sort_order": 4,
+      "title": "",
+      "pos_x": 1151.3899984885604,
+      "pos_y": 66.22124859510188,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "จึงสร้างเครื่องมือที่เน้นการสร้าง Visual Novel โดยเฉพาะ และสามารถจัดการทุกอย่างผ่านเว็บไซต์ได้",
+          "bg": 49,
+          "bgm": null,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 53,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": null,
+      "choices": [
+        {
+          "text": "ทำไมไม่ใช้ Engine?",
+          "next": 4
+        }
+      ]
+    },
+    {
+      "dialogue_id": 6,
+      "sort_order": 5,
+      "title": "",
+      "pos_x": 1946.8813866347834,
+      "pos_y": 121.30116100027419,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "Amiya",
+          "identity": "",
+          "text": "ส่วนต่อไปให้ คุณเอ็กซ์ อธิบายเองคะ",
+          "bg": 49,
+          "bgm": 14,
+          "sfx": 48,
+          "characters": [
+            {
+              "asset_id": 52,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "",
+          "identity": "",
+          "text": "",
+          "bg": 55,
+          "bgm": null,
+          "sfx": null,
+          "characters": [],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [
+            "dialogueLine",
+            "speakerName",
+            "dialogueText"
+          ],
+          "showUiElements": []
+        },
+        {
+          "speaker": "center",
+          "name": "",
+          "identity": "",
+          "text": "",
+          "bg": 55,
+          "bgm": null,
+          "sfx": null,
+          "characters": [],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false,
+          "hideUiElements": [],
+          "showUiElements": []
+        }
+      ],
+      "nextChapter": null,
+      "choices": []
+    }
+  ]
+}

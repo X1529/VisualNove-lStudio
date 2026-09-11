@@ -1,0 +1,288 @@
+{
+  "story_id": 13,
+  "title": "ภายในรถเมล์ Mephistopheles ",
+  "next_id": 1,
+  "assets_preload": [
+    {
+      "asset_id": 8,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Dante_idle",
+      "file_name": "Dante_StandingSprite.png",
+      "file_path": "/assets/characters/Dante/1788608319429-710008812-Dante_StandingSprite.png",
+      "mime_type": "image/png",
+      "size_bytes": 704713,
+      "created_at": "2026-09-05T11:38:39.000Z",
+      "updated_at": "2026-09-05T11:45:06.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Dante/1788608319429-710008812-Dante_StandingSprite.png"
+    },
+    {
+      "asset_id": 11,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Don_Quixote_ร่าเริง",
+      "file_name": "Don_Quixote_Sprite_1.png",
+      "file_path": "/assets/characters/Don/1788608438899-295789325-Don_Quixote_Sprite_1.png",
+      "mime_type": "image/png",
+      "size_bytes": 607933,
+      "created_at": "2026-09-05T11:40:38.000Z",
+      "updated_at": "2026-09-05T11:41:47.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Don/1788608438899-295789325-Don_Quixote_Sprite_1.png"
+    },
+    {
+      "asset_id": 14,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "bgm",
+      "asset_name": "Limbus Company - Mephistopheles Story Theme",
+      "file_name": "Limbus Company - Mephistopheles Story Theme.mp3",
+      "file_path": "/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 1510432,
+      "created_at": "2026-09-05T13:38:10.000Z",
+      "updated_at": "2026-09-05T13:38:10.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788615490595-26282785-Limbus_Company_-_Mephistopheles_Story_Theme.mp3"
+    },
+    {
+      "asset_id": 16,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "dante_ติ๊กต๊อกพูดยาว",
+      "file_name": "dante_limbus_company.mp3",
+      "file_path": "/assets/bgm/1788616192328-525355810-dante_limbus_company.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 54053,
+      "created_at": "2026-09-05T13:49:52.000Z",
+      "updated_at": "2026-09-05T13:49:59.000Z",
+      "file_url": "http://localhost:3000/assets/bgm/1788616192328-525355810-dante_limbus_company.mp3"
+    },
+    {
+      "asset_id": 26,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "sfx",
+      "asset_name": "manager-esquiree!!!!!!-made-with-Voicemod",
+      "file_name": "manager-esquiree!!!!!!-made-with-Voicemod.mp3",
+      "file_path": "/assets/sfx/1788621386653-332486473-manager-esquiree______-made-with-Voicemod.mp3",
+      "mime_type": "audio/mpeg",
+      "size_bytes": 93741,
+      "created_at": "2026-09-05T15:16:26.000Z",
+      "updated_at": "2026-09-05T15:16:26.000Z",
+      "file_url": "http://localhost:3000/assets/sfx/1788621386653-332486473-manager-esquiree______-made-with-Voicemod.mp3"
+    },
+    {
+      "asset_id": 28,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Vergilius_Sprite_8เหนื่อยหน่าย",
+      "file_name": "Vergilius_Sprite_8.png",
+      "file_path": "/assets/characters/Vergilius/1788622573356-391695064-Vergilius_Sprite_8.png",
+      "mime_type": "image/png",
+      "size_bytes": 440485,
+      "created_at": "2026-09-05T15:36:13.000Z",
+      "updated_at": "2026-09-05T15:36:13.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Vergilius/1788622573356-391695064-Vergilius_Sprite_8.png"
+    },
+    {
+      "asset_id": 32,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Hong_Lu_Sprite_ยิ้ม",
+      "file_name": "Hong_Lu_Sprite_5.png",
+      "file_path": "/assets/characters/Hong/1788622752208-353643461-Hong_Lu_Sprite_5.png",
+      "mime_type": "image/png",
+      "size_bytes": 812780,
+      "created_at": "2026-09-05T15:39:12.000Z",
+      "updated_at": "2026-09-05T15:39:12.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Hong/1788622752208-353643461-Hong_Lu_Sprite_5.png"
+    },
+    {
+      "asset_id": 36,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "character",
+      "asset_name": "Ryōshū_Scabbard_idle",
+      "file_name": "RyÅshÅ«_Scabbard_StandingSprite.png",
+      "file_path": "/assets/characters/Ryōshū/1788622935106-547590947-Ry__sh___Scabbard_StandingSprite.png",
+      "mime_type": "image/png",
+      "size_bytes": 526472,
+      "created_at": "2026-09-05T15:42:15.000Z",
+      "updated_at": "2026-09-05T15:42:15.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Ryōshū/1788622935106-547590947-Ry__sh___Scabbard_StandingSprite.png"
+    },
+    {
+      "asset_id": 38,
+      "story_id": 13,
+      "chapter_id": null,
+      "asset_type": "background",
+      "asset_name": "Story_Aboard_Mephistopheles_ตอนเย็น",
+      "file_name": "Story_Aboard_Mephistopheles_6_BG.png",
+      "file_path": "/assets/characters/Story/1788624894853-399493537-Story_Aboard_Mephistopheles_6_BG.png",
+      "mime_type": "image/png",
+      "size_bytes": 1607891,
+      "created_at": "2026-09-05T16:14:54.000Z",
+      "updated_at": "2026-09-05T16:15:04.000Z",
+      "file_url": "http://localhost:3000/assets/characters/Story/1788624894853-399493537-Story_Aboard_Mephistopheles_6_BG.png"
+    }
+  ],
+  "dialogues": [
+    {
+      "dialogue_id": 1,
+      "sort_order": 0,
+      "title": "",
+      "pos_x": 40,
+      "pos_y": 40,
+      "lines": [
+        {
+          "speaker": "center",
+          "name": "",
+          "identity": "",
+          "text": "แสงยามเย็นสีส้มอมแดงส่องลอดหน้าต่างรถบัสเมฟิสโตเฟเลส ตกกระทบคราบเลือดแห้งเกรอะกรังบนพื้นไม้และเบาะนั่ง เสียงเครื่องยนต์ด้านล่างส่งเสียงบดขยี้ชิ้นส่วนเนื้อและกระดูกเป็นจังหวะหนักแน่น",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        },
+        {
+          "speaker": "center",
+          "name": "Dante",
+          "identity": "Manager",
+          "text": "<Tick-Tock> (งานสำหรับวันนี้สิ้นสุดลงแล้ว ขอให้ทุกคนพักผ่อนตามอัธยาศัย)",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": 16,
+          "characters": [
+            {
+              "asset_id": 8,
+              "position": "center",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        },
+        {
+          "speaker": "left",
+          "name": "Don Quixote",
+          "identity": "Sinner #3",
+          "text": "โอ้! ท่านผู้จัดการเอสไควร์! ภารกิจปราบอธรรมประจำวันอันทรงเกียรติเสร็จสิ้นลงแล้วหรือนี่!",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": 26,
+          "characters": [
+            {
+              "asset_id": 11,
+              "position": "left",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": true,
+          "shakeType": "shake-vertical",
+          "shakeDuration": 0.3,
+          "hideUi": false
+        },
+        {
+          "speaker": "right",
+          "name": "Ryōshū",
+          "identity": "Sinner #4",
+          "text": "ช.ล.ก. ... เช็ดเลือดก่อน",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 36,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        },
+        {
+          "speaker": "right",
+          "name": "Hong Lu",
+          "identity": "Sinner #8",
+          "text": "วันนี้ก็เป็นวันที่ราบรื่นอีกวันนะครับ ถ้วยชานี้ยังมีกลิ่นหอมชวนผ่อนคลายเหมือนเคยเลยครับ",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 32,
+              "position": "right",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        },
+        {
+          "speaker": "center",
+          "name": "Vergilius",
+          "identity": "Guide",
+          "text": "นั่งลง ดอน กิโฆเต้... เสียงของเธอทำให้เครื่องยนต์ส่งเสียงดังกว่าปกติ",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [
+            {
+              "asset_id": 28,
+              "position": "center",
+              "highlight": true
+            }
+          ],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        },
+        {
+          "speaker": "center",
+          "name": "",
+          "identity": "",
+          "text": "ดอน กิโฆเต้ ทรุดตัวลงนั่งบนเบาะทันที เสียงเครื่องยนต์ของเมฟิสโตเฟเลสดังกระหึ่มขึ้นครืดหนึ่ง ก่อนจะกลับเข้าสู่จังหวะหมุนวนสม่ำเสมอท่ามกลางเงามืดที่ค่อยๆ คืบคลานเข้ามา",
+          "bg": 38,
+          "bgm": 14,
+          "sfx": null,
+          "characters": [],
+          "flash": false,
+          "flashDuration": 400,
+          "shake": false,
+          "shakeType": "shake-horizontal",
+          "shakeDuration": 300,
+          "hideUi": false
+        }
+      ],
+      "nextChapter": 3,
+      "choices": []
+    }
+  ]
+}
