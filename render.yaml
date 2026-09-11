@@ -1,0 +1,43 @@
+# render.yaml — VisualNovelStudio Persistent Disk (Render)
+# เป้าหมาย: ทำให้ /app/public/assets ไม่หายเมื่อ restart/sleep/redeploy
+# Disk ต้องใช้ Starter plan ขึ้นไป (Free ไม่มี Disk)
+
+services:
+  - type: web
+    name: visualnove-lstudio
+    env: node
+    plan: starter # Disk ต้องใช้ starter ขึ้นไป — ถ้าใช้ free จะ deploy ไม่ติด Disk
+    buildCommand: npm ci
+    startCommand: node server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      # PORT ห้ามตั้ง — Render inject ให้เอง
+      - key: BASE_URL
+        value: https://visualnove-lstudio.onrender.com
+      - key: CORS_ORIGIN
+        value: https://visualnove-lstudio.onrender.com
+      - key: DB_HOST
+        sync: false # ตั้งค่าจริงใน Render Dashboard > Environment (TiDB Cloud ภายนอก) ห้ามใส่ในไฟล์นี้
+      - key: DB_PORT
+        value: 4000
+      - key: DB_NAME
+        value: vn_online
+      - key: DB_SSL
+        value: true
+      # DB_USER, DB_PASS, SESSION_SECRET ตั้งใน Dashboard (Secret) ห้ามใส่ในไฟล์นี้
+    disk:
+      name: vn-assets
+      mountPath: /app/public/assets
+      sizeGB: 1
+
+  # Optional: ถ้าต้องการให้ dialogue JSON ไม่หายด้วย ให้เพิ่ม Disk ที่สอง (ต้องเป็น Standard ขึ้นไปถึงมีหลาย Disk ได้)
+  # ถ้าใช้ Starter มีได้ 1 Disk — ให้เลือก vn-assets ก่อน
+  # - type: web
+  #   disk:
+  #     name: vn-data
+  #     mountPath: /app/data
+  #     sizeGB: 1
