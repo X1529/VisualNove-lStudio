@@ -1,4 +1,4 @@
-// ─── Dialogues API (file-based: data/dialogues/chapter_<id>.json) ─────────
+// ─── Dialogues API (TiDB Cloud JSON storage: dialogues table) ──────────────
 // CRUD บรรทัดบทสนทนา — ทุกการแก้ไข regenerate assets_preload อัตโนมัติ
 
 const { db } = require('../db');

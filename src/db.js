@@ -151,6 +151,20 @@ async function initDatabase() {
       ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
     `);
 
+    // ─── Dialogues (JSON-based: 1 chapter = 1 JSON document) ─────────────────
+    // เก็บบทสนทนาแบบ JSON ใน TiDB Cloud แทนไฟล์บน filesystem
+    // data column เก็บโครงสร้าง: {chapter_id, story_id, title, next_id, assets_preload[], dialogues[]}
+    await db.query(`
+      CREATE TABLE IF NOT EXISTS dialogues (
+        chapter_id   INT PRIMARY KEY,
+        story_id     INT DEFAULT NULL,
+        data         JSON NOT NULL,
+        created_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at   TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+        KEY idx_story (story_id)
+      ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+    `);
+
     // ─── Users (รองรับ Social Login: google_id + password_hash NULLABLE) ────
     await db.query(`
       CREATE TABLE IF NOT EXISTS users (

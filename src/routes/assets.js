@@ -12,6 +12,24 @@ const {
   normalizeAssetRow
 } = require('../helpers');
 const { ownerWhere, ownerValues, requireApiAuth, assertStoryOwner } = require('../auth');
+const { assetDirs, publicAssetRoot } = require('../config');
+
+// ย้ายไฟล์จาก tempUploadDir ไปโฟลเดอร์ถาวรตาม asset_type
+// คืน relative path สำหรับเก็บใน DB (ใช้โดย Express static middleware)
+function moveUploadedFile(file, assetType, assetName) {
+  const type = (assetType || 'character').toLowerCase();
+  if (type === 'character') {
+    return placeCharacterFile(file, assetName || file.originalname);
+  }
+  const folder = getFolderNameByType(type);
+  const destDir = assetDirs[type] || path.join(publicAssetRoot, folder);
+  fs.mkdirSync(destDir, { recursive: true });
+  const destAbs = path.join(destDir, path.basename(file.path));
+  if (path.resolve(destAbs) !== path.resolve(file.path)) {
+    fs.renameSync(file.path, destAbs);
+  }
+  return `/assets/${folder}/${path.basename(file.path)}`;
+}
 
 function register(app) {
   app.get('/api/assets', async (req, res) => {
@@ -81,12 +99,8 @@ function register(app) {
       // ห้ามผูก asset เข้า story ของคนอื่น
       if (!(await assertStoryOwner(req, res, story_id))) return;
 
-      let relativePath;
-      if ((asset_type || 'character').toLowerCase() === 'character') {
-        relativePath = placeCharacterFile(req.file, asset_name || req.file.originalname);
-      } else {
-        relativePath = `/assets/${getFolderNameByType(asset_type)}/${path.basename(req.file.path)}`;
-      }
+      // ย้ายไฟล์จาก temp ไปโฟลเดอร์ถาวรตาม asset_type (req.body พร้อมแล้วตอนนี้)
+      const relativePath = moveUploadedFile(req.file, asset_type, asset_name || req.file.originalname);
 
       const ov = ownerValues(req);
       const [result] = await db.query(
@@ -145,11 +159,8 @@ function register(app) {
         const oldFilePath = safeFilePath(existing.file_path);
         if (fs.existsSync(oldFilePath)) fs.unlinkSync(oldFilePath);
 
-        if ((asset_type || existing.asset_type).toLowerCase() === 'character') {
-          nextPath = placeCharacterFile(req.file, asset_name || existing.asset_name);
-        } else {
-          nextPath = `/assets/${getFolderNameByType(asset_type || existing.asset_type)}/${path.basename(req.file.path)}`;
-        }
+        // ย้ายไฟล์จาก temp ไปโฟลเดอร์ถาวร (req.body พร้อมแล้วตอนนี้)
+        nextPath  = moveUploadedFile(req.file, asset_type || existing.asset_type, asset_name || existing.asset_name);
         fileName  = req.file.originalname;
         mimeType  = req.file.mimetype;
         sizeBytes = req.file.size;

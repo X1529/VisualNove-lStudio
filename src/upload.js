@@ -1,10 +1,15 @@
 // ─── Upload (Multer) ───────────────────────────────────────────────────────
-// กติกา: จำกัด 100 MB/ไฟล์ + อนุญาตเฉพาะ MIME ที่รู้จัก
+// กติกา: จำกัด 20 MB/ไฟล์ + อนุญาตเฉพาะ MIME ที่รู้จัก
+//
+// ⚠️ Multer destination callback ไม่สามารถเชื่อใจ req.body.asset_type ได้เสมอไป
+//    เพราะ multipart field order ไม่รับประกัน — ไฟล์อาจมาถึงก่อน body field
+//    วิธีแก้: multer เซฟไฟล์ไปที่ tempUploadDir ก่อน แล้ว route handler (assets.js)
+//    ค่อยย้ายไปโฟลเดอร์ถูกต้องหลังจาก req.body พร้อมแล้ว
 
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
-const { assetDirs, coverDir } = require('./config');
+const { publicAssetRoot, coverDir } = require('./config');
 
 class MulterFileTypeError extends Error {
   constructor(message) {
@@ -22,14 +27,14 @@ const ALLOWED_EXT = new Set([
   '.mp3', '.ogg', '.wav', '.webm', '.aac', '.m4a', '.flac', '.oga'
 ]);
 
+// Temp directory for multer — แยกจากโฟลเดอร์ถาวร เพื่อให้ route handler ย้ายไฟล์ได้ถูกต้อง
+const tempUploadDir = path.join(publicAssetRoot, '_uploads');
+fs.mkdirSync(tempUploadDir, { recursive: true });
+
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    // req.body อาจยังไม่พร้อมตอน destination callback ถ้า field มาหลัง file
-    // เลยอ่าน type จาก query string สำรองไว้ด้วย — client ควรส่ง asset_type ก่อน file field
-    const type = (req.body.asset_type || req.query.asset_type || 'character').toLowerCase();
-    const dir = assetDirs[type] || assetDirs.character;
-    fs.mkdirSync(dir, { recursive: true });
-    cb(null, dir);
+    // เซฟไว้ tempUploadDir ก่อน — route handler จะย้ายไปที่ถูกต้องหลัง req.body พร้อม
+    cb(null, tempUploadDir);
   },
   filename: (req, file, cb) => {
     const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
