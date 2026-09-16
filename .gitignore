@@ -1,0 +1,44 @@
+# Dependencies (reinstall with: npm install)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Secrets / environment variables (contains DB password, SESSION_SECRET)
+.env
+.env.*
+!.env.example
+
+# Backup & dumps — never push real data
+backup/
+backups/
+backup_*/
+*.sql
+*.sql.gz
+*.dump
+*.db
+*.sqlite
+*.sqlite3
+
+# Certificates / private keys
+certs/
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+*.pfx
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Runtime / temp files (multer staging dir, atomic-write temp files)
+*.tmp
+_uploads/
+
+# Uploaded user assets — runtime data on Render Persistent Disk, never commit
+public/assets/
